@@ -1,0 +1,57 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Akhmadou | Blog</title>
+    <base href="/" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Akhmadou - Web Developer, developper and entrepreneur"
+    />
+    <meta
+      name="keywords"
+      content="Akhmadou, Blog, Web Development, Angular, HTML, CSS, JavaScript, TypeScript"/>
+    <link rel="manifest" href="/manifest.json">
+    <meta property="og:title" content="Akhmadou | Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/0sansnom/" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://github.com/0sansnom" />
+    <meta name="keywords" content="akhmadou ndiaye blog developper"/>
+    <meta name="description" content="Akhamdou's Personal website. Welcome to my blog. You can contact me : akhmadoun8@gmail.com "/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icone57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icone60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icone72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icone176x176.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icone114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icone120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icone144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icone152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icone180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/profile_photo_2.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#121c42t">
+    <meta name="msapplication-TileImage" content="/profile_photo_2.jpg">
+    <meta name="theme-color" content="#121c42">
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} />    
+  </head>
+
+  <body>
+    <Header />
+      <main class="flex flex-grow justify-center min-h-screen p-4">
+        <slot/>
+      </main>
+    <Footer />
+  </body>
+</html>

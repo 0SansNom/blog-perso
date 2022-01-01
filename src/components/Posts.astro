@@ -1,0 +1,32 @@
+---
+import { format } from 'date-fns';
+
+function isPost(post: any, liveStreams: boolean) {
+  if (liveStreams) {
+    return post.title.includes('Unfiltered');  
+  }
+
+  return !post.title.includes('Unfiltered');
+}
+
+const { live } = Astro.props;
+
+let allPosts = Astro.fetchContent('../pages/blog/posts/*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.publishedDate).valueOf() - new Date(a.publishedDate).valueOf());
+
+const posts = allPosts.filter(post => post.published && isPost(post, live));
+---
+
+<div class="text-2x w-5/5">
+  {posts.map(post => {
+    return (
+      <div class="p-4 max-w-sm rounded overflow-hidden shadow-lg">
+        <a href={'/blog/posts/' + post.slug} class="text-gray-600">{post.title}</a>
+
+        <p class="text-sm">
+          {format(new Date(post.publishedDate), 'MMMM dd, yyyy')}
+        </p>
+    </div>
+    );
+  })}
+</div>

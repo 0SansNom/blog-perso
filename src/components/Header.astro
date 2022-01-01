@@ -1,0 +1,62 @@
+---
+import NavLink from './NavLink.astro';
+---
+<header class="bg-blue-800 py-2">
+  <div
+    class="flex justify-center content-between space-x-2 md:space-x-4 lg:space-x-4 lg:text-2xl text-white"
+  >
+    <div>
+      <NavLink href="/blog" title="Blog Posts" active="text-blue-200">
+        Posts
+      </NavLink>
+    </div>
+    <div>
+      <NavLink href="/projects" title="Porjecs" active="text-blue-200">
+       Projects
+      </NavLink>
+    </div>
+    <div>
+      <NavLink href="/contributions" title="Contribtutions" active="text-blue-200">
+        Contributes
+      </NavLink>
+    </div>
+    <div>
+      <NavLink href="/about" title="About Me" active="text-blue-200">
+        About
+      </NavLink>
+    </div>
+  </div>
+
+  <div class="md:flex justify-center py-8">
+    <div class="p-2 my-auto">
+      <img
+        class="rounded-full mx-auto border-8  border-blue-217"
+        src="/assets/images/profile_photo.png"
+        alt="Akhmadou Ndiaye headshot rounded"
+        width="640" height="360"
+      />
+    </div>
+    <div class="p-8 my-auto">
+      <h1 class="text-white text-3xl text-center">Akhmadou Ndiaye</h1>
+      <p class=" text-white text-xl text-center">Notes to my future self</p>
+
+      <div class="flex justify-center space-around py-2 space-x-4">
+        <div class="w-8">
+          <a href="https://github.com/0sansnom" title="GitHub">
+            <img src="/assets/images/logos/github-icon.svg" alt="GitHub Icon" width="12rem" height="8rem"/>
+          </a>
+        </div>
+        <div class="w-8">
+          <a href="https://twitter.com/" title="Twitter">
+            <img src="/assets/images/logos/twitter-icon.svg" alt="Twitter Icon" width="12rem" height="8rem"/>
+          </a>
+        </div>
+        <div class="w-8">
+          <a href="mailto:akhmadoun8@gmail.com" title="Mail">
+            <img src="/assets/images/logos/email-logo.png" alt="E-mail Icon" width="18rem" height="8rem"/>
+          </a>
+        </div>            
+      </div>
+    </div>
+  </div>
+</header>
