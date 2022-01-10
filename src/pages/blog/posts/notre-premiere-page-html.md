@@ -2,7 +2,7 @@
 title: 'Notre première page HTML'
 description: 'Notre première page HTML,
 Creez une page HTML avec le langage HTML'
-published: true
+published: false
 slug: 'notre-premiere-page-html'
 publishedDate: '2021-02-24 02:00 PM CST'
 layout: ../../../layouts/BlogPostLayout.astro

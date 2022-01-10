@@ -1,5 +1,5 @@
 ---
-title: 'Angular Unfiltered Episode 014: NgRx V10 w/Alex Okrushko'
+title: 'Tool for developers'
 description: 'NgRx team member Alex Okrushko joins me to talk about the latest release'
 published: false
 slug: 2020-08-14-angular-unfiltered-014
