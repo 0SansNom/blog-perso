@@ -10,7 +10,7 @@
     "deploy": "npm run build && firebase deploy --project brandontroberts-website"
   },
   "devDependencies": {
-    "astro": "^0.20.9",
+    "astro": "^3.2.2",
     "date-fns": "^2.25.0",
     "firebase-tools": "^9.20.0",
     "prism-themes": "^1.9.0",
